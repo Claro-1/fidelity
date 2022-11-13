@@ -1,0 +1,212 @@
+/**
+ * Name: Paulino Claro Jr
+ * Section: BsIndTech
+ * Year: 4th year
+ */
+ 
+ 
+ package paulino;
+
+        
+
+import java.util.Scanner;
+public class Paulino {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+	    int again;
+            int price = 0;
+            int times;
+            int total;
+            int total2 = 0;
+            int mon;
+            char cust;
+            char order;
+            
+            String menu1 = "Chicken";
+            String menu2 = "Adobo";
+            String menu3 = "Ramen";
+            String menu4 = "Hamburger";
+            String menu5 = "Cheese Burger";
+            String menu6 = "RICE";
+            String menu7 = "Crispy Patata";
+            String menu8 = "Korniks ni Mang Juan";
+            String menu9 = "Goodie Goodie";
+            String menu10 = "Pringles";
+            String menu11 = "Coke";
+            String menu12 = "Sprite";
+            String menu13 = "Red Horse";
+            
+            System.out.print("Would you like to Order [Y. YES: and N. NO]: ");
+            cust = in.next().charAt(0);
+		
+            if(cust == 'Y' || cust == 'y')
+            {
+	    	System.out.println("\n=============FOOD ORDER LIST=============");
+		System.out.println("|              CLARO EATERY          |");
+                System.out.println("|                  -FOODS-                |");
+	    	System.out.println("| A. Chicken                   Php 45.00  |");
+	    	System.out.println("| B. ADOBO                     Php 35.00  |");
+	    	System.out.println("| C. RAMEN                     Php 69.00  |");
+	    	System.out.println("| D. HAMBURGER                 Php 30.00  |");
+	    	System.out.println("| E. CHEESE BURGER             Php 40.00  |");
+                System.out.println("| F. RICE                      Php 10.0   |");
+	    	System.out.println("|                  -SNACKS-               |");
+	    	System.out.println("| G. CRISPY PATATA             Php 10.00  |");
+	    	System.out.println("| H. KORNIKS NI MANG JUAN      Php 8.00   |");
+	    	System.out.println("| I. GOODIE GOODIE             Php 13.00  |");
+                System.out.println("| J. PRINGLES                  Php 99.00  |");
+	    	System.out.println("|                 -BEVERAGES-             |");
+	    	System.out.println("| K. COKE                      Php 20.00  |");
+	    	System.out.println("| L. SPRITE                    Php 20.00  |");
+	    	System.out.println("| M. RED HORSE 1 LITER         Php 110.00 |");
+	    	System.out.println("===========================================");
+	    	
+                
+	    	do
+	    	{
+                    System.out.print("What would you like to order? ");
+	    	    order = in.next().charAt(0);
+                    
+                        if(order == 'a' || order == 'A')
+                        {
+                            System.out.println(menu1);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 45 * times;
+                        }
+                        else if(order == 'b' || order == 'B')
+                        {
+                            System.out.println(menu2);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 35 * times;
+                        }
+                        else if(order == 'c' || order == 'C')
+                        {
+                            System.out.println(menu3);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 69 * times;
+                        }
+                        else if(order == 'd' || order == 'D')
+                        {
+                            System.out.println(menu4);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 30 * times;
+                        }
+                        else if(order == 'e' || order == 'E')
+                        {
+                            System.out.println(menu5);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 40 * times;
+                        }
+                        else if(order == 'f' || order == 'F')
+                        {
+                            System.out.println(menu6);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 10 * times;
+                            
+                        }
+                        else if(order == 'g' || order == 'G')
+                        {
+                            System.out.println(menu7);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 10 * times;  
+                        }
+                        else if(order == 'h' || order == 'H')
+                        {
+                            System.out.println(menu8);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 8 * times;  
+                        }
+                        else if(order == 'i' || order == 'I')
+                        {
+                            System.out.println(menu9);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 13 * times;  
+                        }
+                        else if(order == 'j' || order == 'J')
+                        {
+                            System.out.println(menu10);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 99 * times;  
+                        }
+                        else if(order == 'k' || order == 'K')
+                        {
+                            System.out.println(menu11);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 20 * times;  
+                        }
+                        else if(order == 'l' || order == 'L')
+                        {
+                            System.out.println(menu12);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 20 * times;  
+                        }
+                        else if(order == 'm' || order == 'M')
+                        {
+                            System.out.println(menu13);
+                            System.out.print("How many would you like? ");
+                            times = in.nextInt();
+                            price = 110 * times;  
+                        }
+                        else
+                        {
+                            System.out.print("Invalid");
+                        }
+	    	    System.out.print("Would you like to order again? [1. YES AND 2. NO]: ");
+	    	    again = in.nextInt();
+                
+                total = price;
+                total2 += total;
+	    	}while(again != 2);
+                
+                if(again == 2)
+                {
+                    System.out.println("\nTotal Amount: " + total2);
+                    System.out.print("\nMoney Paid: ");
+                   
+                    
+                    do
+                    {
+                         mon = in.nextInt();
+                         if(mon < total2)
+                         {
+                             System.out.println("Not enought amount.");
+                             System.out.print("Please enter an exact amount.");
+                         }
+                    }while(mon < total2);
+                    
+                    if(mon >= total2)
+                    {
+                        int exchange = mon - total2;
+                        System.out.println("\nYour exchange: " + exchange);
+                        System.out.println("\nTHANK YOU FOR ORDER");
+                    }
+                }
+                else
+                {
+                    System.out.println("INVALID INPUT");
+                }
+	    	
+            }	
+            else if(cust == 'N' || cust == 'n')
+	    {
+	        System.out.println("GOODBYE DEAR CUSTOMER");
+	    }
+            else
+            {
+                System.out.println("INVALID INPUT");
+            }
+    }
+}

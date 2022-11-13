@@ -1,0 +1,57 @@
+package assignmentpractisan;
+
+
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Assignmentpractisan{
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat(".##");
+        
+        int input;
+        double grade, total = 0, div;
+        int Another;
+        
+        System.out.print("Would you like to put Grades? [1. YES and 2. NO]: ");
+        input = in.nextInt();
+        
+        if(input == 1)
+        {
+            do
+            {
+                System.out.print("Enter a Grade: ");
+                grade = in.nextDouble();
+                System.out.println("---------------------------------------------------------------------");
+                System.out.print("Would you like to put Another Grade? [1. YES and 2. NO]: ");
+                Another = in.nextInt();
+                System.out.println("---------------------------------------------------------------------");
+                
+                if(Another > 2)
+                {
+                    System.out.print("Invalid Input please try again. ");
+                    do
+                    {
+                        Another = in.nextInt();
+                    }while(Another > 2);
+                }
+
+                total += grade;
+            }while(Another == 1);
+            
+            System.out.print("How many grades you enter: ");
+            div = in.nextDouble();
+            System.out.println("\n==========================");
+            System.out.println("AVERAGE GRADE: " + df.format(total/div));
+            System.out.println("==========================");
+        }
+        else if(input == 2)
+        {
+            System.out.println("THANK YOU AND GOODBYE USER....");
+        }
+        else
+        {
+            System.out.println("INVALID INPUT");
+        }
+    }
+}
